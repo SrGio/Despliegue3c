@@ -1,0 +1,72 @@
+<html> 
+<head>
+	<title>Juego</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="game.css">
+	<link rel="icon" href="" type="image/x-icon">
+</head>
+<body>
+	<audio controls autoplay>
+ 		 <source src="" type="audio/ogg">
+ 	</audio>	
+	
+	<div id="score">Puntuación: 0 - Nivel: 1</div>
+	<h2>Elige tu Pokémon</h2>
+	<div id="equipo">
+		
+		<img id="bulbasaur" src="imagenes/Bulbasaur_icon.png"/>
+		<img id="charmander" src="imagenes/Charmander_icon.png"/>
+		<img id="squirtle" src="imagenes/Squirtle_icon.png"/>
+		<div id="eleccion"></div>
+		<button id="start">Comenzar Juego</button>
+	</div>
+	
+
+	<div id="batalla">
+		<div id="marcadores">
+			<div id="name">Charmander</div>
+			<div>###########</div>
+			<div>###########</div>
+			<div id="ename">Enemigo</div>
+		</div>
+		<table id="z1">
+			<tr>
+				<td id="c1" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a1" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="c2" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a2" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="c3" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a3" class="attack" src="imagenes/fire_atack.png"/></td>
+			</tr><tr>
+				<td id="c4" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a4" class="attack" src="imagenes/fire_atack.png"/><img id="player" src="imagenes/Charmander_icon.png" draggable="true" ondragstart="drag(event)"/></td>
+				<td id="c5" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a5" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="c6" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a6" class="attack" src="imagenes/fire_atack.png"/></td>
+			</tr><tr>				
+				<td id="c7" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a7" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="c8" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a8" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="c9" class="zona1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="a9" class="attack" src="imagenes/fire_atack.png"/></td>
+			</tr>
+		</table>
+		<table id="z2">
+			<tr>
+				<td id="k1" class="zona2"><img id="b1" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k2" class="zona2"><img id="b2" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k3" class="zona2"><img id="b3" class="attack" src="imagenes/fire_atack.png"/></td>
+			</tr><tr>
+				<td id="k4" class="zona2"><img id="b4" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k5" class="zona2"><img id="b5" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k6" class="zona2"><img id="b6" class="attack" src="imagenes/fire_atack.png"/>
+					<div id="enemy"> 
+						<img src="imagenes/MissingNo_icon.png"/>
+					</div>
+				</td>
+			</tr><tr>				
+				<td id="k7" class="zona2"><img id="b7" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k8" class="zona2"><img id="b8" class="attack" src="imagenes/fire_atack.png"/></td>
+				<td id="k9" class="zona2"><img id="b9" class="attack" src="imagenes/fire_atack.png"/></td>
+			</tr>
+		</table>
+		<button id="atacar" onclick="atacar()">Atacar</button>
+	</div>
+	<script type="text/javascript" src="game.js">
+		
+	</script>
+</body>
+</html>
